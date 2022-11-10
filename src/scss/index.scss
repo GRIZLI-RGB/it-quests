@@ -1,0 +1,190 @@
+@import url("_reset.scss");
+
+body {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    color: #232020;
+}
+
+.auth {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    &__forms {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        &::after {
+            position: absolute;
+            content: '';
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            height: 500px;
+            width: 1px;
+            background-color: #E0E0E0;
+        }
+        .enter {
+            margin-right: 55px;
+            width: 340px;
+            position: relative;
+            label {
+                line-height: 21px;
+            }
+            &__title {
+                font-size: 22px;
+                color: #97a1a3;
+                line-height: 27px;
+                padding-bottom: 25px;
+            }
+            &__remember {
+                position: absolute;
+                right: 0;
+                color: #4d647d;
+                text-decoration-line: underline;
+                line-height: 21px;
+                cursor: pointer;
+                transition: all 0.2s;
+                &:hover {
+                    opacity: 0.75;
+                }
+            }
+            &__input {
+                input {
+                    margin-top: 8px;
+                    margin-bottom: 15px;
+                    width: 100%;
+                    border: 1px solid #e0e0e0;
+                    min-height: 50px;
+                    padding: 0 16px 0 45px;
+                }
+            }
+            &__btn {
+                width: 100%;
+                background-color: #009ac8;
+                color: #fff;
+                padding: 14px 0 15px;
+                line-height: 21px;
+                transition: all 0.2s;
+                margin-top: 10px;
+                &:hover {
+                    opacity: 0.75;
+                }
+            }
+        }
+        .reg {
+            width: 340px;
+            margin-left: 55px;
+            label {
+                line-height: 21px;
+            }
+            &__title {
+                font-size: 22px;
+                color: #97a1a3;
+                line-height: 27px;
+                padding-bottom: 25px;
+            }
+            &__input {
+                label {
+                    line-height: 21px;
+                }
+                input {
+                    margin-top: 8px;
+                    margin-bottom: 15px;
+                    width: 100%;
+                    border: 1px solid #e0e0e0;
+                    min-height: 50px;
+                    padding: 0 16px 0 45px;
+                }
+            }
+            &__btn {
+                width: 100%;
+                background-color: #009ac8;
+                color: #fff;
+                padding: 14px 0 15px;
+                line-height: 21px;
+                transition: all 0.2s;
+                margin-top: 10px;
+                &:hover {
+                    opacity: 0.75;
+                }
+            }
+        }
+    }
+    &__alternative {
+        margin-top: 70px;
+        text-align: center;
+        &-text {
+            display: block;
+            line-height: 21px;
+            padding-bottom: 15px;
+        }
+        &-method {
+            display: inline-block;
+            & + & {
+                margin-left: 14px;
+            }
+            &:hover {
+                position: relative;
+                top: -2px;
+            }
+            img {
+                cursor: pointer;
+                transition: all 0.2s;
+                &:hover {
+                    opacity: 0.7;
+                }
+            }
+        }
+    }
+}
+
+#email__input {
+    position: relative;
+    &::after {
+        position: absolute;
+        content: '';
+        width: 19px;
+        height: 24px;
+        left: 16px;
+        top: 50%;
+        background-image: url('./../../public/img/email.png');
+        background-repeat: no-repeat;
+        transform: translateY(-50%);
+    }
+}
+
+#fio__input {
+    position: relative;
+    &::after {
+        position: absolute;
+        content: '';
+        width: 20px;
+        height: 26px;
+        left: 16px;
+        top: 50%;
+        background-image: url('./../../public/img/user.png');
+        background-repeat: no-repeat;
+        transform: translateY(-50%);
+    }
+}
+
+#password__input {
+    position: relative;
+    &::after {
+        position: absolute;
+        content: '';
+        width: 18px;
+        height: 24px;
+        left: 16px;
+        top: 50%;
+        background-image: url('./../../public/img/key.png');
+        background-repeat: no-repeat;
+        transform: translateY(-50%);
+    }
+}

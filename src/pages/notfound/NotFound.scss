@@ -1,0 +1,32 @@
+.nf {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    &__status {
+        font-weight: 600;
+        font-size: 128px;
+        line-height: 155px;
+    }
+    &__info {
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 39px;
+        margin-bottom: 10px;
+    }
+    &__back {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        color: #4D647D;
+        text-decoration: underline;
+        margin-bottom: 40px;
+        cursor: pointer;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
